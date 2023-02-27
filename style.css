@@ -1,0 +1,309 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+/* body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+body{
+    background-color: rgb(160, 160, 203);
+}
+.calc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 45vw;
+    margin-bottom: 5vw;
+}
+
+.calculator{
+    background-color: dimgray;
+    width: 22vw;
+    height: 60vw;
+    border-radius: 1vw;
+    border: 2px solid black;
+}
+h1{
+    /* text-shadow: 2px 2px 4x black; */
+    font-size: 3vw;
+    padding: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+#screenText{
+    /* display: block; */
+    outline: none;
+    text-decoration: none;
+    background-color: black;
+    width: 100%;
+    height: 10vw;
+    border-radius: 1vw 1vw 0px 0px;
+    border: none;
+    color: white;
+    text-align: right;
+    font-size: 4vw;
+    font-weight: lighter;
+    caret-shape:bar;
+    
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.func{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.fun{
+    cursor: pointer;
+    background-color: orange;
+    border-width: 0.1px;
+    text-align: center;
+    height: 4vw;
+    width: 4vw;
+    margin: 1vw 0.5vw;
+    font-size: 2vw;
+    font-weight:lighter;
+    border-radius: 0.5vw;
+    color: white;
+}
+.nums{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.numbtn{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border-width: 0.1px;
+    text-align: center;
+    height: 4vw;
+    width: 4vw;
+    margin: 1vw 0.5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    border-radius: 0.5vw;
+    color: rgb(0, 0, 0);
+}
+.equalbtn{
+    background-color: green;
+}
+.cbtn{
+    width: 50%;
+    background-color: red;
+}
+footer{
+    width: 100vw;
+    height: 4vw;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+@media(max-width: 1000px){
+    .calc{
+        height: 130vw;
+    }
+    h1{
+        font-size: 7vw;
+    }
+    .calculator{
+        background-color: dimgray;
+        width: 40vw;
+        height: 85vw;
+        border-radius: 2vw;
+        border: 2px solid black;
+    }
+    #screenText{
+        /* display: block; */
+        outline: none;
+        text-decoration: none;
+        background-color: black;
+        width: 100%;
+        height: 18vw;
+        border-radius: 2vw 2vw 0px 0px;
+        border: none;
+        color: white;
+        text-align: right;
+        font-size: 8vw;
+        font-weight: lighter;
+        
+    }
+    .func{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+    .fun{
+        background-color: orange;
+        border-width: 0.1px;
+        text-align: center;
+        height: 8vw;
+        width: 16vw;
+        margin: 1vw 0.5vw;
+        font-size: 4vw;
+        font-weight:lighter;
+        border-radius: 0.75vw;
+        color: white;
+    }
+    .nums{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+    .numbtn{
+        background-color: rgb(255, 255, 255);
+        border-width: 0.1px;
+        text-align: center;
+        height: 7vw;
+        width: 10vw;
+        margin: 1vw 0.5vw;
+        font-size: 4vw;
+        font-weight: bold;
+        border-radius: 0.75vw;
+        color: rgb(0, 0, 0);
+    }
+    .equalbtn{
+        background-color: green;
+    }
+    .cbtn{
+        width: 50%;
+        background-color: red;
+    }
+    footer{
+        width: 100vw;
+        height: 8vw;
+        background-color:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        color: white;
+        font-size: 2.5vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+} 
+
+@media(max-width: 500px){
+    .calc{
+        height: 130vw;
+    }
+    h1{
+        font-size: 7vw;
+    }
+    .func{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+    .calculator{
+        background-color: dimgray;
+        width: 50vw;
+        height: 104vw;
+        border-radius: 2vw;
+        border: 2px solid black;
+    }
+    #screenText{
+        /* display: block; */
+        outline: none;
+        text-decoration: none;
+        background-color: black;
+        width: 100%;
+        height: 18vw;
+        border-radius: 2vw 2vw 0px 0px;
+        border: none;
+        color: white;
+        text-align: right;
+        font-size: 8vw;
+        font-weight: lighter;
+        pointer-events: none;
+        cursor: none;
+        
+    }
+    .fun{
+        background-color: orange;
+        border-width: 0.1px;
+        text-align: center;
+        height: 10vw;
+        width: 22vw;
+        margin: 1vw 0.5vw;
+        font-size: 5vw;
+        font-weight:lighter;
+        border-radius: 1vw;
+        color: white;
+    }
+    .nums{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+    .numbtn{
+        background-color: rgb(255, 255, 255);
+        border-width: 0.1px;
+        text-align: center;
+        height: 10vw;
+        width: 14vw;
+        margin: 1vw 0.5vw;
+        font-size: 5vw;
+        font-weight: bold;
+        border-radius: 1vw;
+        color: rgb(0, 0, 0);
+    }
+    .equalbtn{
+        background-color: green;
+    }
+    .cbtn{
+        width: 50%;
+        background-color: red;
+    }
+    
+    footer{
+        width: 100vw;
+        height: 10vw;
+        background-color:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        color: white;
+        font-size: 3vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+}
